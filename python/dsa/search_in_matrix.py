@@ -22,6 +22,7 @@ def search_in_matrix(matrix: list[list[int]], target: int) -> bool:
                 r = mid - 1
     return False
 
+
 # O(log m * n)
 def better_search_in_matrix(matrix: list[list[int]], target: int) -> bool:
     rows = len(matrix)

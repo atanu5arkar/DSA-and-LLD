@@ -18,7 +18,5 @@ Unfortunately, we are not allowed to mutate the given array. To respect the cons
 
 Initialize a _fast_ and a _slow_ pointer, and find the node where they meet. 
 
-    Do they always meet? 
-    
-    Well, at some point, both pointers will enter the cycle. Since the difference between the distances travelled by the pointers increases by 1, they definitely meet when the difference is some multiple of the cycle's length.
+> Do they always meet? Well, at some point, both pointers will enter the cycle. Since the difference between the distances travelled by the pointers increases by 1, they definitely meet when the difference is some multiple of the cycle's length.
 

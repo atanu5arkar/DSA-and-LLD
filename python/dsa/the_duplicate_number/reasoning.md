@@ -13,10 +13,3 @@ Unfortunately, we are not allowed to mutate the given array. To respect the cons
 
 * Such a list will always have a cycle.
 * No. of incoming links is equal to the no. of times the node index appears in the array, which implies the node with the repeated index has more than one incoming links. Hence, the duplicate number is the entry point to the cycle.
-
-## Floyd's Algorithm for Cycle Detection
-
-Initialize a _fast_ and a _slow_ pointer, and find the node where they meet. 
-
-> Do they always meet? Well, at some point, both pointers will enter the cycle. Since the difference between the distances travelled by the pointers increases by 1, they definitely meet when the difference is some multiple of the cycle's length.
-

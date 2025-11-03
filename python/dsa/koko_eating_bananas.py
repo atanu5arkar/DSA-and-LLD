@@ -1,7 +1,12 @@
+# Revision: Nov 3, 2025
+
 import math
 
-# O(n * log m)
-def bananas_to_eat_per_hour(piles: list[int], h: int) -> int:
+def min_eating_speed(piles: list[int], h: int) -> int:
+    # At most, Koko can eat as many bananas in an hour as is available
+    # in the pile with most bananas.
+    
+    # Binary Search to determine the minimum possible rate
     left = 0
     right = max(piles) - 1
     min_rate = 1
@@ -24,4 +29,5 @@ def bananas_to_eat_per_hour(piles: list[int], h: int) -> int:
 
 piles = [1, 4, 3, 2]
 h = 9
-print(bananas_to_eat_per_hour(piles, h))
+
+print(min_eating_speed(piles, h))
